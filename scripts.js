@@ -1,6 +1,7 @@
 const convertButton = document.querySelector(".convert-button");
 const currencySelect = document.querySelector(".currency-select");
-const imageChange = document.querySelector(".imagem")
+const imageChange = document.querySelector(".imagem");
+const textoToChange = document.getElementById("text-to-change");
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value;
@@ -15,7 +16,8 @@ function convertValues() {
             style: "currency",
             currency: "USD",
         }).format(inputCurrencyValue / dolarToday);
-        imageChange.src = "./assets/dolar.png"
+        imageChange.src = "./assets/dolar.png";
+        textoToChange.innerHTML = "Dólar";
         console.log(inputCurrencyValue / dolarToday);
 
     } else if (currencySelect.value === "euro") {
@@ -23,7 +25,9 @@ function convertValues() {
             style: "currency",
             currency: "EUR",
         }).format(inputCurrencyValue / euroToday);
-        imageChange.src = "./assets/euro.png"
+        imageChange.src = "./assets/euro.png";
+        textoToChange.innerHTML = "Euro";
+
         console.log(inputCurrencyValue / euroToday);
     }
 
