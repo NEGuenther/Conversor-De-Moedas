@@ -8,7 +8,7 @@
 
 body {
 
-    background-color:rgb(113, 0, 117);
+    background-color:#2D3330;
 }
 
 main {
@@ -75,7 +75,7 @@ button {
     appearance: none;
     font-weight: 700;
     font-size: 16px;
-    background-color: #ffe600;
+    background-color: #468065;
 
 }
 button:hover{
@@ -87,7 +87,7 @@ button:active{
 }
 
 section {
-    border: 4px solid #bbbbbb;
+    border: 4px solid #41AA79;
     border-radius: 10px;
     font-family: Roboto;
     font-size: 18px;
