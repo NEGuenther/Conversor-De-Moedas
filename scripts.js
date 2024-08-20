@@ -1,5 +1,6 @@
 const convertButton = document.querySelector(".convert-button");
 const currencySelect = document.querySelector(".currency-select");
+const imageChange = document.querySelector(".imagem")
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value;
@@ -14,12 +15,15 @@ function convertValues() {
             style: "currency",
             currency: "USD",
         }).format(inputCurrencyValue / dolarToday);
+        imageChange.src = "./assets/dolar.png"
         console.log(inputCurrencyValue / dolarToday);
+
     } else if (currencySelect.value === "euro") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR",
         }).format(inputCurrencyValue / euroToday);
+        imageChange.src = "./assets/euro.png"
         console.log(inputCurrencyValue / euroToday);
     }
 
