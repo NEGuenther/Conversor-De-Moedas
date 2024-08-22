@@ -1,5 +1,8 @@
 # Currency Converter
-![Captura de Tela](img/print1.png)![Captura de Tela](img/print2.png)
+## Site em telas padrões
+![Captura de Tela](assets/printtelacheia.png)
+## Site em telas menores (com resposividade)
+![Captura de Tela](assets/printtelapequena.png)
 
 
 ## Descrição
