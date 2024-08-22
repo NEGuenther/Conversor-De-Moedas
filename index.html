@@ -16,37 +16,46 @@
     <main>
         <label>
             Converter <b>De</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
+            <select class="currency-select-from">
+                <option value="realFrom">R$ Real Brasileiro</option>
+                <option value="dolarFrom">US$ Dolar Americano</option>
+                <option value="euroFrom">€ Euro</option>
+                <option value="ieneFrom">¥ Iene</option>
+                <option value="rupiaFrom">₹ Rupia indiana</option>
+
             </select>
         </label>
 
         <label>
             Converter <b>para</b>
             <select class="currency-select">
-                <option value="dolar">US$ Dolar Americano</option>
-                <option value="euro">€ Euro</option>
+                <option value="realTo">R$ Real Brasileiro</option>
+                <option value="dolarTo">US$ Dolar Americano</option>
+                <option value="euroTo">€ Euro</option>
+                <option value="ieneTo">¥ Iene</option>
+                <option value="rupiaTo">₹ Rupia indiana</option>
             </select>
         </label>
 
         <label>
-            Valor<input class="input-currency" placeholder="R$ 10.000,00">
+            Valor<input class="input-currency" placeholder="Digite um valor">
         </label>
         
         <button class="convert-button">Converter</button> 
 
         <section>
             <div class="real">
-                <img src="./assets/real.png" alt="logo-moeda-a-converter">
-                <p class="currency">Real</p>
+                <img class="imagemFrom" src="./assets/real.png" alt="logo-moeda-a-converter">
+                <p id="text-change-from" class="currency">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             <img src="./assets/seta.png" alt="seta">
             <div class="dolar">
-                <img class="imagem" src="./assets/dolar.png" alt="logo-moeda-convertida">
-                <p id="text-to-change" class="currency">Dólar</p>
+                <img class="imagemTo" src="./assets/dolar.png" alt="logo-moeda-convertida">
+                <p id="text-change-to" class="currency">Dólar</p>
                 <p class="currency-value">US$ 0,00</p>
             </div>
+            
         </section>
     </main>
 
